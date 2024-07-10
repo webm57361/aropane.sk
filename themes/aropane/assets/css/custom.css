@@ -1,0 +1,48 @@
+a {
+  color: #0f74a8;
+}
+
+h2,
+.h2,
+h3,
+.h3 {
+  margin-bottom: 1rem;
+}
+
+section {
+  padding: 70px 0;
+}
+
+section.hero .container {
+  padding: 80px 20px 100px;
+}
+
+@media (max-width: 991px) {
+  section.featured-posts .image {
+    width: 100%;
+    max-height: none;
+  }
+}
+
+/*section.featured-posts .image {*/
+/*max-height: none;*/
+/*}*/
+
+/*section.featured-posts .image img {*/
+/*height: auto;*/
+/*max-width: 100%;*/
+/*}*/
+
+section.featured-posts p {
+  color: inherit;
+}
+
+section.featured-posts a {
+  color: #0f74a8;
+}
+
+footer.main-footer {
+}
+
+footer.main-footer .copyrights {
+}
