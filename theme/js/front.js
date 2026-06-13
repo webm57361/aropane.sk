@@ -1,14 +1,16 @@
-function equalizeHeight(x, y) {
-  var textHeight = $(x).height();
-  $(y).css("min-height", textHeight);
-}
-
-$(document).ready(function () {
-  "use strict";
-
-  equalizeHeight(".featured-posts .text", ".featured-posts .image");
-
-  $(window).resize(function () {
-    equalizeHeight(".featured-posts .text", ".featured-posts .image");
-  });
+document.addEventListener('DOMContentLoaded', function () {
+  // Mobile navbar toggle
+  var toggler = document.querySelector('.navbar-toggler');
+  var collapse = document.querySelector('#navbarcollapse');
+  if (toggler && collapse) {
+    toggler.addEventListener('click', function () {
+      collapse.classList.toggle('show');
+    });
+    // Close menu when clicking a nav link (mobile)
+    collapse.querySelectorAll('.nav-link').forEach(function (link) {
+      link.addEventListener('click', function () {
+        collapse.classList.remove('show');
+      });
+    });
+  }
 });
